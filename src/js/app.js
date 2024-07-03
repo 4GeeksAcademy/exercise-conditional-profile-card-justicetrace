@@ -35,34 +35,34 @@ function render(variables = {}) {
           <img src="${variables.avatarURL}" class="photo" />
           <h1>${variables.name === null ? "Justice" : variables.name} 
           ${variables.lastName === null ? "Rivera" : variables.lastName}</h1>
-          <h2>${variables.role === null ? "That One Guy" : variables.role}</h2>
-          <h3>${variables.city === null ? "Boca Raton" : variables.city},
+          <h2>${variables.role === null ? "Rookie" : variables.role}</h2>
+          <h3>${variables.city === null ? "Broward" : variables.city},
           ${variables.country === null ? "USA" : variables.country}</h3>
           <ul class= ${
             variables.socialMediaPosition === null
               ? "position-right"
               : variables.socialMediaPosition
           }>
-            <li><a href=${
-              variables.twitter === null
-                ? "https://twitter.com/4geeksacademy"
-                : variables.twitter
-            }><i class="fab fa-twitter"></i></a></li>
-            <li><a href=${
-              variables.github === null
-                ? "https://github.com/4geeksacademy"
-                : variables.github
-            }><i class="fab fa-github"></i></a></li>
-            <li><a href=${
-              variables.linkedin === null
-                ? "https://linkedin.com/school/4geeksacademy"
-                : variables.linkedin
-            }><i class="fab fa-linkedin"></i></a></li>
-            <li><a href=${
+            <li><a href="https://twitter.com/${
+              variables.twitter === null ? "4geeksacademy" : variables.twitter
+            }">
+            <i class="fab fa-twitter"></i>
+            </a>
+            </li>
+            <li><a href="https://github.com/${
+              variables.github === null ? "4geeksacademy" : variables.github
+            }">
+            <i class="fab fa-github"></i>
+            </a>
+            </li>
+            <li><a href="https://linkedin.com/${
+              variables.linkedin === null ? "4geeksacademy" : variables.linkedin
+            }"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/${
               variables.instagram === null
-                ? "https://instagram.com/4geeksacademy"
+                ? "4geeksacademy"
                 : variables.instagram
-            }><i class="fab fa-instagram"></i></a></li>
+            }"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
